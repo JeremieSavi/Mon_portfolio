@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <p>SAVI <span>Jérémie</span></p>
+        <ul class="nav_links">
+            <li><a href="#acceuil"> Acceuil </a></li>
+            <li><a href="#apropos"> A propos </a></li>
+            <li><a href="#projets"> Projets </a></li>
+            <li><a href="#skills"> Compétence </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+        <ul class="menu_hamburguer">
+            <li><a href="">X</a></li>
+            <li><a href="#acceuil"> Acceuil </a></li>
+            <li><a href="#apropos"> A propos </a></li>
+            <li><a href="#projets"> Projets </a></li>
+            <li><a href="#competences"> Compétence </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+        <img style="background:rgb(255, 255, 255);" src="assets/icone_menu.png" class="icone_menu" alt="">
+    </nav>
+    <header class="header">
+        <div class="div_text">
+            <p>Je suis <span> Jérémie </span> Dévéloppeur Web en devenir passionné par le web et le design ! <!--<br></br>Mon objetif est de pourvoir un jour combiné aisément passion et expertise pour créer des solutions numériques --></p>
+            <a href="#" class="button_header">Voir mes projets </a>
+        </div>
+        <div class="div_image">
+            <img  src="assets/photo_dev.png" alt="">
+        </div>
+    </header>
+    <section id="apropos" >
+        <h1 class="titre_apropos">A propos</h1>
+        <div class="container_apropos">
+            <div class="text_apropos">
+                <p>Je m'appelle <span> Savi </span>  , passionnée par la <br>
+                création de site web modernes et intaractif</p>
+
+                <p> Je suis actuelement étudiante en <span> developpement web </span> , <br>
+                et je cherche à ameliorer mes Compétences en Javascript, HTML et CSS </p>
+                <p> J'adore transformer mes idées en projets concrets <br>
+                et experimenter avec les nouvelles technologies </p>
+                <a href="#">Télécharger mon CV</a>
+            </div>
+            <div class="div_image_apropos">
+                <img src="assets/Photo.jpg" alt="ma photo">
+            </div>
+
+        </div>
+
+    </section>
+    <section id="projets">
+        <h1>Projets</h1>
+        <div class="container_projets">
+            <div class="projet projet_1">
+               <p>Un mini-jeu interactif en Javascript qui utilise des évènements DOM  
+               </p> 
+               <button>Voir</butto>
+
+            </div>
+            <div class="projet projet_1">
+               <p>Un mini-jeu interactif en Javascript qui utilise des évènements DOM  
+               </p> 
+               <button>Voir</butto>
+
+            </div>
+            <div class="projet projet_1">
+               <p>Un mini-jeu interactif en Javascript qui utilise des évènements DOM  
+               </p> 
+               <button>Voir</butto>
+
+            </div>
+            <div class="projet projet_1">
+               <p>Un mini-jeu interactif en Javascript qui utilise des évènements DOM  
+               </p> 
+               <button>Voir</butto>
+
+            </div>
+            <div class="projet projet_1">
+               <p>Un mini-jeu interactif en Javascript qui utilise des évènements DOM  
+               </p> 
+               <button>Voir</butto>
+
+            </div>
+            <div class="projet projet_1">
+               <p>Un mini-jeu interactif en Javascript qui utilise des évènements DOM  
+               </p> 
+               <button>Voir</butto>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="skills">
+        <div class="container_skills">
+
+            
+            <div class="skills_part1">
+                <h2>Soft skills </h2>
+                <div class="bar">
+                    <span> Gestion de projet </span> 
+                    <div class="progression progression1">
+                    </div>
+                </div>
+                <div class="bar">
+                    <span> Résolution de problème </span>
+
+                    <div class="progression progression2">
+                    </div>
+                </div>
+                <div class="bar">
+                    <span> Adaptabilité </span>
+                    <div class="progression progression3">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills_part2">
+                <!--  -->
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">     
+                        </div>
+                    </div>
+                    <!--  -->
+                    <svg width="200" height="200">
+                        <circle cx="100" cy="100" r="90" stroke="blue" stroke-width="20" fill="none" />
+
+                    </svg>
+
+
+                </div>
+
+            </div>
+       </div> 
+    </section>
+
+    <!-- Section Contact  -->
+    <section id="contact">
+        <h1 class="titre_contact">Vous avez un <span> projet en tête ? </span> <br> N'hésiter pas à me <span> contacter </span> </h1>
+        <div class="container_contact">
+            <form action="">
+                <div class="form_group form_group_1">
+                    <label for="">Votre prénom</label>
+                    <input type="text">
+                </div>
+                <div class="form_group form_group_2">
+                    <label for="">Votre nom</label>
+                    <input type="text">
+                </div>
+                <div class="form_group form_group_3">
+                    <label for=""> Votre sujet </label>
+                    <input type="text">
+                </div>
+                <textarea name="" id="the_textarea"></textarea>
+                <button type="submit"></button>
+            </form>
+        </div>
+    </section>
+    <footer id="footer"> 
+        <p>Designed by <span>Jérémie</span> with Html Css Js</p>
+
+        <p>Tous droits réservés</p>
+
+         
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
