@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
@@ -126,16 +128,47 @@
 
             <div class="skills_part2">
                 <!--  -->
-                <div class="skill">
+                <div class="skill skill1">
                     <div class="outer">
-                        <div class="inner">     
+                        <div class="inner"> 
+                            <span id="number1"></span>    
                         </div>
                     </div>
                     <!--  -->
                     <svg width="200" height="200">
-                        <circle cx="100" cy="100" r="90" stroke="blue" stroke-width="20" fill="none" />
+                        <circle class="circle1" cx="80" cy="80" r="70" stroke="" stroke-width="20" stroke-linecap="round" fill="none" />
 
                     </svg>
+                    <Span class="tit">Html</Span>
+
+
+                </div>
+                <div class="skill skill2">
+                    <div class="outer">
+                        <div class="inner"> 
+                            <div id="number2"></div>    
+                        </div>
+                    </div>
+                    <svg width="200" height="200">
+                        <circle class="circle2" cx="80" cy="80" r="70" stroke="" stroke-width="20" stroke-linecap="round" fill="none" />
+
+                    </svg>
+
+                    <Span class="tit">Css</Span>
+
+                </div>
+                <div class="skill skill3">
+                    <div class="outer">
+                        <div class="inner"> 
+                            <div id="number3"></div>    
+                        </div>
+                    </div>
+                    
+                    <svg width="200" height="200">
+                        <circle class="circle3" cx="80" cy="80" r="70" stroke="" stroke-width="20" stroke-linecap="round" fill="none" />
+
+                    </svg>
+                    <Span class="tit tit3">JavaScript</Span>
 
 
                 </div>
@@ -151,18 +184,20 @@
             <form action="">
                 <div class="form_group form_group_1">
                     <label for="">Votre prénom</label>
-                    <input type="text">
+                    <input type="text" id="input_prenom">
                 </div>
                 <div class="form_group form_group_2">
                     <label for="">Votre nom</label>
-                    <input type="text">
+                    <input type="text" id="input_nom">
                 </div>
                 <div class="form_group form_group_3">
                     <label for=""> Votre sujet </label>
-                    <input type="text">
+                    <input type="text" id="input_sujet">
                 </div>
                 <textarea name="" id="the_textarea"></textarea>
-                <button type="submit"></button>
+                
+                <button type="submit">Envoyer</button>
+        
             </form>
         </div>
     </section>
@@ -173,6 +208,5 @@
 
          
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

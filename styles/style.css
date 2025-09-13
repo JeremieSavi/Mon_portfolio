@@ -199,7 +199,7 @@ body{
 .container_projets{  
     max-width:1200px ; /*Taille réelle :1050px*/
     width:100%;
-    display: grid;
+    display:grid;
     justify-content: center;
     gap:30px;
     grid-template-columns: repeat(auto-fill,350px);
@@ -211,6 +211,9 @@ body{
 #skills .container_skills{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     padding:100px 10px ;
     background: #d6ecfa;
      
@@ -226,9 +229,6 @@ body{
     border-radius: 10px;
     padding: 20px;
 
-}
-.circle{
-    position: ;
 }
 
 .bar{
@@ -265,6 +265,103 @@ body{
 }
 .progression3{
     width:70%;
+}
+
+
+/* Style de la deuxième partie de la section skill */
+.skills_part2{
+    border-radius: 5px;
+    padding:30px 20px;
+    width: 540px;
+
+    background:white;
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Style du circular progress bar   */
+.skill{
+   width: 160px;
+   height:160px;
+/* background-color:cornflowerblue; */
+position: relative;
+}
+.outer{
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    padding:20px;
+    box-shadow:6px 6px 10px rgb(0,0,0,.18),
+    -6px -6px 10px rgb(255,255,255);
+}  
+.inner{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    box-shadow:
+    inset 4px 4px 6px -1px rgb(0,0,0,0.2),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.7);
+    /* -0,5px -0,5px 0px rgba(255,255,255,1),
+    0,5px 0,5px 0px rgba(0,0,0,0.15),
+    0px 12px 10px -10px rgba(0,0,0,0.05); */
+}
+
+   
+.tit{
+    position: relative;
+    top: 7px;
+    left:65px;
+}
+.tit3{
+    left:50px;
+}
+
+circle{
+    fill: none;
+    /* stroke: #620f86;  */
+    stroke: var(--main-color);
+    stroke-width:20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset:450;
+    animation:myanim 2s linear forwards ;
+
+}
+.circle1{
+        animation:circle1 2s linear forwards ;
+}
+.circle2{
+        animation:circle2 2s linear forwards ;
+}
+.circle3{
+        animation:circle3 2s linear forwards ;
+}
+@keyframes circle1{
+    100%{  
+        stroke-dashoffset:45;
+    }
+}
+@keyframes circle2{
+    100%{
+        stroke-dashoffset:90;
+    }
+}
+@keyframes circle3{
+    100%{
+        stroke-dashoffset:157.5;
+    }
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left:0;  
+}
+.tit{
+    text-align: center;
 }
 
 
@@ -319,10 +416,10 @@ body{
     display:flex;
     width:720px;
     height:25px;
-    border-radius: 5px;
+    border-radius:5px;
 }
 
-form #the_textare{
+form #the_textarea{
     height:200px;
     width:calc(350px + 350px + 20px);
     grid-column:1/ span 2;
@@ -330,19 +427,36 @@ form #the_textare{
 }
 form button{
     grid-row:4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80px;
+    height:30px;
+    position: absolute;
+    margin-top:5px;
+    left:45%;
+    background:var(--main-color);
+    color: #d6ecfa;
+    border-radius: 5px;
 }
 
 form{
-    border: var(--main-color) 1px solid;
-    width: ;
-    height: auto;
+    position: relative;
+    width:;
+    height:auto;
     display: grid;
-    grid-template-columns:repeat(2,350px);
+    grid-template-columns:repeat(2,minmax(350px,1fr));
     grid-template-rows: repeat(2,60px) 200px 40px;
 
     column-gap:20px;
-}
 
+}
+input.invalid,textarea.invalid{
+    border:2px solid red;
+}
+input.valid,textarea.valid{
+    border:2px solid green;
+}
 
 
 /* Style de la section footer   */
@@ -367,6 +481,57 @@ form{
     .nav .icone_menu{
         display: block;
     }
+
+/* 
+    form{
+        display: grid;
+        grid-template-columns:minmax(200px,1fr);
+        grid-template-rows: repeat(6,minmax(200px,1fr));
+    } */
+    form{
+        display:flex;
+        flex-direction: column;
+        grid-template-columns:350px;
+        gap: 20px;
+        margin:0 20px;
+        width:350px;
+        
+        
+
+    }
+
+
+    form button{
+        position: relative;
+    }
+
+
+    .form_group_1 input{
+    width:350px;
+    height: 25px;
+    border-radius: 5px;
+
+}
+.form_group_2 input{
+    width:100%;
+    height: 25px;
+
+
+}
+.form_group_3 input{
+    display:flex;
+    width:100%;
+    height:25px;
+    border-radius:5px;
+}
+
+form #the_textarea{
+    height:200px;
+    /* width:calc(350px + 350px + 20px); */
+    width:100%;
+
+}
+
 
     
 } 
