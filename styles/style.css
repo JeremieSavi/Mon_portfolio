@@ -19,10 +19,12 @@ body{
 }
 
 .nav{
+    width:100%;
     display: flex;
     justify-content:space-between;
     padding: 30px;
-    background:#171717;
+    /* background:#171717; */
+    background:#f20000;
     position: fixed;
     left:0;
     top: 0;
@@ -377,7 +379,7 @@ svg{
 #contact{
     background: black;
     padding: 100px 0;
-    
+
     
 }
 #contact .titre_contact{
